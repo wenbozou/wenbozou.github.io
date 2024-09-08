@@ -4,10 +4,28 @@
         <title>wb blog Blog</title>
         <link>https://wenbozou.github.io/blog</link>
         <description>wb blog Blog</description>
-        <lastBuildDate>Thu, 26 Aug 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 08 Sep 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[github-pages-docusaurus]]></title>
+            <link>https://wenbozou.github.io/blog/github-pages-docusaurus</link>
+            <guid>https://wenbozou.github.io/blog/github-pages-docusaurus</guid>
+            <pubDate>Sun, 08 Sep 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[1. Install Node.js and npm or Yarn]]></description>
+            <content:encoded><![CDATA[<ol>
+<li>Install Node.js and npm or Yarn</li>
+<li>Install Docusaurus</li>
+<li>Create a new Docusaurus project</li>
+<li>Run the development server</li>
+<li>Create a new blog post</li>
+<li>Publish the blog post to GitHub Pages</li>
+<li>ssh</li>
+<li>Deploy</li>
+</ol>]]></content:encoded>
+            <category>greetings</category>
+        </item>
         <item>
             <title><![CDATA[Welcome]]></title>
             <link>https://wenbozou.github.io/blog/welcome</link>
