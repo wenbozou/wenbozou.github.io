@@ -1,9 +1,9 @@
-name: 部署到 GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [master]
-  pull_request:
+    branches: 
+      - master  # or the branch you want to deploy from
 
 permissions:
   contents: write
