@@ -1,0 +1,48 @@
+name: 部署到 GitHub Pages
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+permissions:
+  contents: write
+
+jobs:
+  test-deploy:
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: yarn
+      - name: 安装依赖
+        run: yarn install --frozen-lockfile
+      - name: 测试构建网站
+        run: yarn build
+  deploy:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: yarn
+      - uses: webfactory/ssh-agent@v0.5.0
+        with:
+          ssh-private-key: ${{ secrets.GH_PAGES_DEPLOY }}
+      - name: 部署到 GitHub Pages
+        env:
+          USE_SSH: true
+        run: |
+          git config --global user.email "1045031242@qq.com"
+          git config --global user.name "wenbozou"
+          yarn install --frozen-lockfile
+          yarn deploy
