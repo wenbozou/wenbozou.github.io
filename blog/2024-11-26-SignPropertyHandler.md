@@ -1,7 +1,11 @@
 ---
+slug: SignPropertyHandler
 title: SignPropertyHandler
-date: 2021-08-11 19:18:36
-Author: wenbozou
+authors:
+  - name: wenbozou
+    title: Author
+    url: https://wenbozou.github.io
+tags: [SignPropertyHandler]
 ---
 
 # 简介

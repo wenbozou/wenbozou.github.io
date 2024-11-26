@@ -1,7 +1,11 @@
 ---
+slug: config_center_demo
 title: config_center_demo
-date:   2024-10-17
-Author: wenbozou
+authors:
+  - name: wenbozou
+    title: Author
+    url: https://wenbozou.github.io
+tags: [config_center_demo]
 ---
 
 # 简介

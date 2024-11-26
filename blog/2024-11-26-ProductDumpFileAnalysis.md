@@ -1,7 +1,11 @@
 ---
-title: ProductDumpFileAnalysis
-date: 2024-10-18 16:42:35
-Author: wenbozou
+slug: ProductDumpFileAnalysis
+title: ProductDumpFileAnalysisc
+authors:
+  - name: wenbozou
+    title: Author
+    url: https://wenbozou.github.io
+tags: [ProductDumpFileAnalysis]
 ---
 
 

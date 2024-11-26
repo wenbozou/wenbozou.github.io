@@ -1,7 +1,11 @@
 ---
+slug: PcGuardService
 title: PcGuardService
-date: 2021-08-11 16:00:00
-author: wenbozou
+authors:
+  - name: wenbozou
+    title: Author
+    url: https://wenbozou.github.io
+tags: [PcGuardService]
 ---
 
 #PcGuardService

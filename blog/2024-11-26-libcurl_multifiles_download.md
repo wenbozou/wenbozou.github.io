@@ -1,7 +1,11 @@
 ---
+slug: libcurl download
 title: libcurl download
-date:   2024-10-17
-Author: wenbozou
+authors:
+  - name: wenbozou
+    title: Author
+    url: https://wenbozou.github.io
+tags: [libcurl download]
 ---
 
 # 简介
