@@ -2,32 +2,98 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wenbozou.github.io/blog</id>
     <title>wb blog Blog</title>
-    <updated>2024-09-08T00:00:00.000Z</updated>
+    <updated>2024-09-30T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wenbozou.github.io/blog"/>
     <subtitle>wb blog Blog</subtitle>
     <icon>https://wenbozou.github.io/img/favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[github-pages-docusaurus]]></title>
-        <id>https://wenbozou.github.io/blog/github-pages-docusaurus</id>
-        <link href="https://wenbozou.github.io/blog/github-pages-docusaurus"/>
+        <title type="html"><![CDATA[build-curl-with]]></title>
+        <id>https://wenbozou.github.io/blog/build-curl-with</id>
+        <link href="https://wenbozou.github.io/blog/build-curl-with"/>
+        <updated>2024-09-30T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Readme.md]]></summary>
+        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" src="https://wenbozou.github.io/assets/images/%E7%A7%BB%E5%8A%A8%E6%90%BA%E5%8F%B7%E8%BD%AC%E7%BD%91-f2ba8a88a143ebb04dafb3c67e172d28.png" width="1233" height="903" class="img_ev3q"></p>
+<p><a href="https://wenbozou.github.io/blog/2024/09/30/curl-build/assets/README">Readme.md</a></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-编译-zlib-131">1. 编译 zlib 1.3.1<a href="https://wenbozou.github.io/blog/build-curl-with#1-%E7%BC%96%E8%AF%91-zlib-131" class="hash-link" aria-label="Direct link to 1. 编译 zlib 1.3.1" title="Direct link to 1. 编译 zlib 1.3.1">​</a></h2>
+<p>github 上拉取源代码 <a href="https://github.com/wenbozou/zlib/tree/feature_1.3.1" target="_blank" rel="noopener noreferrer">https://github.com/wenbozou/zlib/tree/feature_1.3.1</a></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="方法1使用cmake编译">方法1：使用cmake编译<a href="https://wenbozou.github.io/blog/build-curl-with#%E6%96%B9%E6%B3%951%E4%BD%BF%E7%94%A8cmake%E7%BC%96%E8%AF%91" class="hash-link" aria-label="Direct link to 方法1：使用cmake编译" title="Direct link to 方法1：使用cmake编译">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="方法2使用visual-studio编译">方法2：使用Visual Studio编译<a href="https://wenbozou.github.io/blog/build-curl-with#%E6%96%B9%E6%B3%952%E4%BD%BF%E7%94%A8visual-studio%E7%BC%96%E8%AF%91" class="hash-link" aria-label="Direct link to 方法2：使用Visual Studio编译" title="Direct link to 方法2：使用Visual Studio编译">​</a></h3>
+<p>在"contrib\vstudio\vc17" 目录下找到zlibvc.sln, 打开后编译即可。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-编译-openssl-321-集成-zlib">2. 编译 OpenSSL 3.2.1 (集成 zlib)<a href="https://wenbozou.github.io/blog/build-curl-with#2-%E7%BC%96%E8%AF%91-openssl-321-%E9%9B%86%E6%88%90-zlib" class="hash-link" aria-label="Direct link to 2. 编译 OpenSSL 3.2.1 (集成 zlib)" title="Direct link to 2. 编译 OpenSSL 3.2.1 (集成 zlib)">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-create-a-new-docusaurus-project">3. Create a new Docusaurus project<a href="https://wenbozou.github.io/blog/build-curl-with#3-create-a-new-docusaurus-project" class="hash-link" aria-label="Direct link to 3. Create a new Docusaurus project" title="Direct link to 3. Create a new Docusaurus project">​</a></h2>
+<ol start="4">
+<li>
+<p>Run the development server</p>
+</li>
+<li>
+<p>Create a new blog post</p>
+</li>
+<li>
+<p>Publish the blog post to GitHub Pages</p>
+</li>
+<li>
+<p>ssh</p>
+</li>
+<li>
+<p>Deploy</p>
+</li>
+</ol>
+<div class="language-js codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-js codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token number" style="color:#36acaa">9.</span><span class="token plain"> ssh</span><span class="token operator" style="color:#393A34">-</span><span class="token plain">agen 服务启动</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<div class="language-js codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-js codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token console class-name">console</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">log</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">'每个仓库都应该有个吉祥物。'</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<div class="language-jsx codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockTitle_Ktv7">/src/components/HelloCodeTitle.js</div><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-jsx codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">function</span><span class="token plain"> </span><span class="token function maybe-class-name" style="color:#d73a49">HelloCodeTitle</span><span class="token punctuation" style="color:#393A34">(</span><span class="token parameter">props</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword control-flow" style="color:#00009f">return</span><span class="token plain"> </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">h1</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain-text">Hello, </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain">props</span><span class="token punctuation" style="color:#393A34">.</span><span class="token property-access">name</span><span class="token punctuation" style="color:#393A34">}</span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">h1</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>]]></content>
+        <author>
+            <name>wenbozou</name>
+            <uri>https://wenbozou.github.io</uri>
+        </author>
+        <category label="build-curl-with" term="build-curl-with"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[wenbozou.github.io]]></title>
+        <id>https://wenbozou.github.io/blog/2024/09/30/curl-build/assets/README</id>
+        <link href="https://wenbozou.github.io/blog/2024/09/30/curl-build/assets/README"/>
+        <updated>2024-09-30T00:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[build-a-blog-with-github-pages-docusaurus]]></title>
+        <id>https://wenbozou.github.io/blog/build-a-blog-with-github-pages-docusaurus</id>
+        <link href="https://wenbozou.github.io/blog/build-a-blog-with-github-pages-docusaurus"/>
         <updated>2024-09-08T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[1. Install Node.js and npm or Yarn]]></summary>
         <content type="html"><![CDATA[<ol>
-<li>Install Node.js and npm or Yarn</li>
-<li>Install Docusaurus</li>
-<li>Create a new Docusaurus project</li>
-<li>Run the development server</li>
-<li>Create a new blog post</li>
-<li>Publish the blog post to GitHub Pages</li>
-<li>ssh</li>
-<li>Deploy</li>
+<li>
+<p>Install Node.js and npm or Yarn</p>
+</li>
+<li>
+<p>Install Docusaurus</p>
+</li>
+<li>
+<p>Create a new Docusaurus project</p>
+</li>
+<li>
+<p>Run the development server</p>
+</li>
+<li>
+<p>Create a new blog post</p>
+</li>
+<li>
+<p>Publish the blog post to GitHub Pages</p>
+</li>
+<li>
+<p>ssh</p>
+</li>
+<li>
+<p>Deploy</p>
+</li>
+<li>
+<p>ssh-agen 服务启动</p>
+</li>
 </ol>]]></content>
         <author>
             <name>wenbozou</name>
             <uri>https://wenbozou.github.io</uri>
         </author>
-        <category label="greetings" term="greetings"/>
+        <category label="build-a-blog-with-github-pages-docusaurus" term="build-a-blog-with-github-pages-docusaurus"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
