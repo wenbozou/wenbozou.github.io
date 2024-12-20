@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'Hi!'
+sidebar_label: 'config-center-demo'
 sidebar_position: 4
 ---
 
