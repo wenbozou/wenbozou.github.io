@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'PcGuardService'
+sidebar_label: 'SignPropertyHandler'
 sidebar_position: 4
 ---
 
