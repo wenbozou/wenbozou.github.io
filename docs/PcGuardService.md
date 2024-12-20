@@ -153,9 +153,9 @@ end;
 
 
 ## 静默安装程序包
-用 Cmd 执行 "/VERYSILENT /SP- /NORESTART /DIR=\"{installTargetDir}\" /LANG=en /LOG=\"{logName}\" /sptrack " 即可。
 
-```cs
+
+```cs 用 Cmd 执行 "/VERYSILENT /SP- /NORESTART /DIR=\"{installTargetDir}\" /LANG=en /LOG=\"{logName}\" /sptrack " 即可。
 string installTargetDir = $"{programFilesX86Path}\\{folderName}\\";
 string logName = $"{System.AppDomain.CurrentDomain.BaseDirectory}Logs\\setup.log";
 string curlParam = $"/VERYSILENT /SP- /NORESTART /DIR=\"{installTargetDir}\" /LANG=en /LOG=\"{logName}\" /sptrack ";
