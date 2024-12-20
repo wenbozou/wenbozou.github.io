@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'PcGuardService'
+sidebar_label: 'ProductDumpFileAnalysis'
 sidebar_position: 4
 ---
 
