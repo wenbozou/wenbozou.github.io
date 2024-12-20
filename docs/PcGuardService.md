@@ -152,3 +152,32 @@ end;
 ```
 
 
+## 静默安装程序包
+用 Cmd 执行 "/VERYSILENT /SP- /NORESTART /DIR=\"{installTargetDir}\" /LANG=en /LOG=\"{logName}\" /sptrack " 即可。
+
+```cs
+string installTargetDir = $"{programFilesX86Path}\\{folderName}\\";
+string logName = $"{System.AppDomain.CurrentDomain.BaseDirectory}Logs\\setup.log";
+string curlParam = $"/VERYSILENT /SP- /NORESTART /DIR=\"{installTargetDir}\" /LANG=en /LOG=\"{logName}\" /sptrack ";
+
+ProcessStartInfo startInfo = new ProcessStartInfo
+{
+    FileName = $"cmd.exe", // 指定要启动的外部程序名称  
+    Arguments = $"/c \"\"{packagePath}\" {curlParam}\"", // 启动时传递给程序的参数
+    UseShellExecute = false,       // 不使用系统 shell 执行
+    CreateNoWindow = true,         // 不显示 cmd 窗口
+    WorkingDirectory = AppDomain.CurrentDomain.BaseDirectory,
+};
+
+// 创建并启动进程  
+using (Process curlProc = Process.Start(startInfo))
+{
+    if (curlProc != null)
+    {
+        curlProc.WaitForExit();
+    }
+    else {}
+}
+```
+
+
