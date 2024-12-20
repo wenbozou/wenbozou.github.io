@@ -180,4 +180,62 @@ using (Process curlProc = Process.Start(startInfo))
 }
 ```
 
+## log4net 日志记录
+1.引用 log4net 程序集
+2.创建日志配置文件 log4net.config
+```xml
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <configSections>
+    <section name="log4net" type="log4net.Config.Log4NetConfigurationSectionHandler, log4net" />
+  </configSections>
+  <log4net>
+    <!-- 定义一个文件日志记录器 -->
+    <appender name="RollingFileAppender" type="log4net.Appender.RollingFileAppender">
+      <!-- 日志文件的路径 -->
+      <file value="logs\" />
+      <rollingStyle value="Date" />
+      <!-- 文件格式-->
+      <!-- 文件日志的回滚机制 -->
+      <appendToFile value="true" />
+      <!-- 日志文件的最大大小 -->
+      <maximumFileSize value="10MB" />
+      <!-- 保留的日志文件个数 -->
+      <maxSizeRollBackups value="5" />
+      <!--否采用静态文件名，文件名是否唯一-->
+      <staticLogFileName value="false"/>
+      <!-- 日志格式 -->
+      <layout type="log4net.Layout.PatternLayout">
+        <conversionPattern value="%date %-5level %logger - %message%newline" />
+      </layout>
+    </appender>
+
+    <!-- 定义一个控制台日志记录器 -->
+    <appender name="ConsoleAppender" type="log4net.Appender.ConsoleAppender">
+      <layout type="log4net.Layout.PatternLayout">
+        <conversionPattern value="%date %-5level %logger - %message%newline" />
+      </layout>
+    </appender>
+
+    <!-- 定义日志级别及适用的appender -->
+    <root>
+      <!-- 日志级别：DEBUG, INFO, WARN, ERROR, FATAL -->
+      <level value="DEBUG" />
+      <level value="INFO" />
+      <!-- 关联控制台和文件的日志输出 -->
+      <appender-ref ref="ConsoleAppender" />
+      <appender-ref ref="RollingFileAppender" />
+    </root>
+  </log4net>
+</configuration>
+```
+3.在应用程序入口处添加以下代码
+```cs
+XmlConfigurator.Configure();
+```
+4.在需要记录日志的代码中，通过 log4net 记录日志
+```cs
+ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+log.Info("This is a log message.");
+
 
