@@ -1,4 +1,12 @@
+---
+sidebar_label: 'cmake'
+sidebar_position: 4
+---
 # cmake
+
+[cmake官网](https://cmake.org/)
+[cmake菜谱(cmake-cookbook 中文版)](https://www.bookstack.cn/read/CMake-Cookbook/README.md)
+
 
 ## 安装
 
