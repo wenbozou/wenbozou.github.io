@@ -4,7 +4,7 @@ sidebar_position: 4
 ---
 # cmake
 
-[cmake官网](https://cmake.org/)
+[cmake官网](https://cmake.org/cmake/help/latest/index.html)
 [cmake菜谱(cmake-cookbook 中文版)](https://www.bookstack.cn/read/CMake-Cookbook/README.md)
 
 
