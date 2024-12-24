@@ -1,5 +1,5 @@
 {
-    "label": "MFC or VC++",
+    "label": "MFC_VC++",
     "position": 3,
     "link": {
       "type": "generated-index"
