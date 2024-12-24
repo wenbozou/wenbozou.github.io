@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'PcGuardService'
-sidebar_position: 4
+sidebar_position: 3
 ---
 
 
