@@ -1,5 +1,4 @@
 ---
-sidebar_label: 'cmake'
 sidebar_position: 1
 ---
 
