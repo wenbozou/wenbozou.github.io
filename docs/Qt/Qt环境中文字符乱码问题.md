@@ -5,7 +5,7 @@ sidebar_position: 2
 
 # Visual Studio 2022 Qt VS Tools 环境中文字符乱码问题
 
-[引用文章](https://blog.csdn.net/m0_51005282/article/details/142308244)
+[原文出处](https://blog.csdn.net/m0_51005282/article/details/142308244)
 
 ## 问题描述
 
