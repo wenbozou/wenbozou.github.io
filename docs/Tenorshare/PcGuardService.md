@@ -3,7 +3,6 @@ sidebar_label: 'PcGuardService'
 sidebar_position: 3
 ---
 
-
 # PcGuardService
 
 ## 简介
@@ -237,5 +236,6 @@ XmlConfigurator.Configure();
 ```cs
 ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 log.Info("This is a log message.");
+```
 
 
